@@ -84,7 +84,6 @@ function validate() {
 function solve() {
     readGrid();
     let res = validateGrid();
-    console.log(res);
     if (res === "Valid Grid") {
         solveGrid();
     } else {
@@ -147,8 +146,6 @@ function solveGrid() {
         }
     }
     backtrack(0);
-
-    console.log(grid);
 
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
