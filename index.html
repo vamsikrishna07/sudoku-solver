@@ -9,8 +9,128 @@
     <script src="game.js"></script>
 </head>
 
-<body>
-
+<body style="background-color: #212529">
+    <div class="container">
+        <div class="title">
+            <h1 style="color: #fefae0 ">Sudoku Solver</h1>
+        </div>
+        <hr>
+        <div class="dummy">
+            <div class="enter-numbers">
+                <h3 style="color: #fefae0 "> Enter numbers </h2>
+            </div>
+            <div class="gridArea">
+                <div id="grid">
+                    <input class="top left" type="text" autocomplete="off" id="1" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="2" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="3" maxlength="1" inputmode="numeric">
+                    <input class="top left" type="text" autocomplete="off" id="4" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="5" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="6" maxlength="1" inputmode="numeric">
+                    <input class="top left" type="text" autocomplete="off" id="7" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="8" maxlength="1" inputmode="numeric">
+                    <input class="right top" type="text" autocomplete="off" id="9" maxlength="1" inputmode="numeric">
+                    <br>
+                    <input class="left" type="text" autocomplete="off" id="10" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="11" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="12" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="13" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="14" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="15" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="16" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="17" maxlength="1" inputmode="numeric">
+                    <input class="right" type="text" autocomplete="off" id="18" maxlength="1" inputmode="numeric">
+                    <br>
+                    <input class="left" type="text" autocomplete="off" id="19" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="20" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="21" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="22" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="23" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="24" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="25" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="26" maxlength="1" inputmode="numeric">
+                    <input class="right" type="text" autocomplete="off" id="27" maxlength="1" inputmode="numeric">
+                    <br>
+                    <input class="top left" type="text" autocomplete="off" id="28" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="29" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="30" maxlength="1" inputmode="numeric">
+                    <input class="top left" type="text" autocomplete="off" id="31" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="32" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="33" maxlength="1" inputmode="numeric">
+                    <input class="top left" type="text" autocomplete="off" id="34" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="35" maxlength="1" inputmode="numeric">
+                    <input class="right top" type="text" autocomplete="off" id="36" maxlength="1" inputmode="numeric">
+                    <br>
+                    <input class="left" type="text" autocomplete="off" id="37" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="38" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="39" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="40" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="41" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="42" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="43" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="44" maxlength="1" inputmode="numeric">
+                    <input class="right" type="text" autocomplete="off" id="45" maxlength="1" inputmode="numeric">
+                    <br>
+                    <input class="left" type="text" autocomplete="off" id="46" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="47" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="48" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="49" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="50" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="51" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="52" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="53" maxlength="1" inputmode="numeric">
+                    <input class="right" type="text" autocomplete="off" id="54" maxlength="1" inputmode="numeric">
+                    <br>
+                    <input class="top left" type="text" autocomplete="off" id="55" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="56" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="57" maxlength="1" inputmode="numeric">
+                    <input class="top left" type="text" autocomplete="off" id="58" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="59" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="60" maxlength="1" inputmode="numeric">
+                    <input class="top left" type="text" autocomplete="off" id="61" maxlength="1" inputmode="numeric">
+                    <input class="top" type="text" autocomplete="off" id="62" maxlength="1" inputmode="numeric">
+                    <input class="right top" type="text" autocomplete="off" id="63" maxlength="1" inputmode="numeric">
+                    <br>
+                    <input class="left" type="text" autocomplete="off" id="64" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="65" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="66" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="67" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="68" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="69" maxlength="1" inputmode="numeric">
+                    <input class="left" type="text" autocomplete="off" id="70" maxlength="1" inputmode="numeric">
+                    <input class="" type="text" autocomplete="off" id="71" maxlength="1" inputmode="numeric">
+                    <input class="right" type="text" autocomplete="off" id="72" maxlength="1" inputmode="numeric">
+                    <br>
+                    <input class="bottom left" type="text" autocomplete="off" id="73" maxlength="1" inputmode="numeric">
+                    <input class="bottom" type="text" autocomplete="off" id="74" maxlength="1" inputmode="numeric">
+                    <input class="bottom" type="text" autocomplete="off" id="75" maxlength="1" inputmode="numeric">
+                    <input class="bottom left" type="text" autocomplete="off" id="76" maxlength="1" inputmode="numeric">
+                    <input class="bottom" type="text" autocomplete="off" id="77" maxlength="1" inputmode="numeric">
+                    <input class="bottom" type="text" autocomplete="off" id="78" maxlength="1" inputmode="numeric">
+                    <input class="bottom left" type="text" autocomplete="off" id="79" maxlength="1" inputmode="numeric">
+                    <input class="bottom" type="text" autocomplete="off" id="80" maxlength="1" inputmode="numeric">
+                    <input class="bottom right" type="text" autocomplete="off" id="81" maxlength="1"
+                        inputmode="numeric">
+                    <br>
+                </div>
+            </div>
+            <div class="game-buttons">
+                <input type="button" id="validateGrid" value="Validate" onclick="validate()">
+                <input type="button" id="solveGrid" value="Solve" onclick="solve()">
+                <input type="button" id="resetGrid" value="Reset" onclick="reset()">
+            </div>
+            <div class="guidelines">
+                <h2>Guidelines</h2>
+                <ul>
+                    <li> Each row must contain the digits 1-9 without repetition. </li>
+                    <li> Each column must contain the digits 1-9 without repetition. </li>
+                    <li> Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without
+                        repetition.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

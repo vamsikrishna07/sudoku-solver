@@ -1,0 +1,66 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container {
+    justify-content: center;    
+}
+
+hr {
+    width: 500px;
+    color: #fefae0;
+}
+
+.guidelines {
+    float: left;
+    text-align: justify;
+    color: #9b998f;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-right: 8px;
+    padding: 0;
+    touch-action: manipulation;
+    background-color:#fefae0;
+    color: #212529;
+    font-style: bold;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    background-color: #212529;
+    color: #fefae0;
+    border: 1px dotted gray;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin-left: 0px;
+    margin-right: -5px;
+}
+
+.left {
+    border-left: 0.15em solid #fefae0 !important;
+}
+
+.top {
+    border-top: 0.15em solid #fefae0 !important;
+}
+
+.right {
+    border-right: 0.15em solid #fefae0 !important;
+}
+
+.bottom {
+    border-bottom: 0.15em solid #fefae0 !important;
+}
+
+.game-buttons {
+    margin-top: 25x;
+    padding-top: 25px;
+}
