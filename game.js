@@ -155,7 +155,7 @@ function solveGrid() {
             let val = i * 9 + j + 1;
             let existingValue = document.getElementById(val.toString()).value;
             document.getElementById(val.toString()).value = grid[i][j];
-            if (existingValue === ".")
+            if (existingValue === "")
                 document.getElementById(val.toString()).style.color = "#ECFB36";
         }
     }
