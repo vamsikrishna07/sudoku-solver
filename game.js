@@ -153,8 +153,10 @@ function solveGrid() {
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
             let val = i * 9 + j + 1;
+            let existingValue = document.getElementById(val.toString()).value;
             document.getElementById(val.toString()).value = grid[i][j];
-            document.getElementById(val.toString()).style.color = "#ECFB36";
+            if (existingValue === ".")
+                document.getElementById(val.toString()).style.color = "#ECFB36";
         }
     }
 
