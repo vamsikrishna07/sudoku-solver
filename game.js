@@ -1,5 +1,7 @@
 var grid;
 const EMPTY = '.'
+const possibleNumbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+const emptyPoints = [];
 
 window.onload = function () {
     initialize();
@@ -35,6 +37,17 @@ function readGrid() {
 
 }
 
+function isNotADigit(val) {
+    let res = true;
+    for (let i = 0; i < 9; i++) {
+        if (val === possibleNumbers[i]) {
+            res = false;
+            break;
+        }
+    }
+    return res;
+}
+
 
 function validateGrid() {
     let rows = new Set();
@@ -43,6 +56,32 @@ function validateGrid() {
     let curRowElem;
     let curColElem;
     let curBoxElem;
+    let isAllEmpty = true;
+
+    for (let i = 0; i < 9; i += 1) {
+        for (let j = 0; j < 9; j += 1) {
+            if (grid[i][j] !== '.') {
+                isAllEmpty = false;
+                break;
+            }
+        }
+        if (!isAllEmpty) {
+            break;
+        }
+    }
+
+    if (isAllEmpty) {
+        return "Invalid Grid. Enter some numbers in the grid";
+    }
+
+
+    for (let i = 0; i < 9; i += 1) {
+        for (let j = 0; j < 9; j += 1) {
+            if (isNotADigit(grid[i][j])) {
+                return "Invalid Grid. Enter only digits between 1-9";
+            }
+        }
+    }
 
     for (let i = 0; i < 9; i += 1) {
         for (let j = 0; j < 9; j += 1) {
@@ -113,9 +152,6 @@ function checkIfValid(number, row, col, grid) {
     }
     return true;
 }
-
-const possibleNumbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-const emptyPoints = [];
 
 function backtrack(emptyPointIndex) {
     if (emptyPointIndex >= emptyPoints.length) {
