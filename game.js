@@ -38,9 +38,10 @@ function readGrid() {
 }
 
 function isNotADigit(val) {
+    console.log('val - ', val);
     let res = true;
     for (let i = 0; i < 9; i++) {
-        if (val === possibleNumbers[i]) {
+        if (val === '.' || val === possibleNumbers[i]) {
             res = false;
             break;
         }
@@ -74,6 +75,7 @@ function validateGrid() {
         return "Invalid Grid. Enter some numbers in the grid";
     }
 
+    console.log("gird - ", grid);
 
     for (let i = 0; i < 9; i += 1) {
         for (let j = 0; j < 9; j += 1) {
